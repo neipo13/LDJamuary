@@ -14,7 +14,7 @@ Game for the [Lost Decade Jamuary Game Jam](https://itch.io/jam/jamuary) along w
   * Game was actually pretty fun, if very simple
   * Not a ton of enemy types, would mostly need a bunch of upgrade types
     * Upgrades
-      * split shot(on contact split and shoot horizontally)
+      * split shot(on contact/bullet death split and shoot horizontally)
       * triple shot
       * piercing shot
       * DoT shot
@@ -23,8 +23,19 @@ Game for the [Lost Decade Jamuary Game Jam](https://itch.io/jam/jamuary) along w
       * wall does damage to those who hit it
       * fire rate up
       * dmg up
-      * 
+      * bouncing shot(contact makes bullet reflect)
+      * range up
+      * explosive shot (does area damage)
+      * clone (two "player" characters)
     * Enemies
+      * troll - just walks down
+      * red troll - walks down and changes lanes
+      * bat - flys down in zig zag pattern (sin maybe)
+      * red bat - breaks into two bats on death
+      * wizard - walks fast and shoots from range but weak in hp
+      * red wizard - increases attack speed of units in magic circle
+      * magiskull - pinball type enemy (does not deal much wall dmg)
+      * red magiskull - similar to above but does high explosive dmg on death (hits enemies and wall)
   * Designed for mobile and would definitely work on mobile
 * __Binding of Raga__ - Top down shooter similar to isaac/awl. Basically just a clone but would be fun to work on. Could use some of the old Unity isaac shooter level gen logic.
   * Also very ambitious
