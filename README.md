@@ -9,7 +9,8 @@ Game for the [Lost Decade Jamuary Game Jam](https://itch.io/jam/jamuary) along w
   * Single sprite/character
   * Probably the most ambitious idea
   * probably the simplest in terms of art but the most work in terms of game interaction/logic
-* __Rampart Rush__ - Abandoned LD project, seemed like a fun idea. Would ahve to massively simplify the upgrade mechanics (maybe move to NT/Downwell style upgrade system) and focus on making gameplay fun
+* __Rampart Rush__ - Abandoned LD project, seemed like a fun idea. Would ahve to massively simplify the upgrade mechanics (maybe move to NT/Downwell style upgrade system) and focus on making gameplay fun 
+  * Demo [Link](http://arcade.lostdecadegames.com/rampart-rush/)
   * Seems very doable
   * Game was actually pretty fun, if very simple
   * Not a ton of enemy types, would mostly need a bunch of upgrade types
