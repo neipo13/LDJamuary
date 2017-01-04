@@ -1,11 +1,21 @@
-import RainbowText from 'objects/RainbowText';
+import Player from 'objects/Player';
+import Input from 'util/Input';
 
 class GameState extends Phaser.State {
 
+	preload(){
+		this.game.load.image('player', 'img/16pxTest.png');
+		this.game.load.image('sword', 'img/testSword.png');
+	}
+
 	create() {
-		let center = { x: this.game.world.centerX, y: this.game.world.centerY }
-		let text = new RainbowText(this.game, center.x, center.y, "- phaser -\nwith a sprinkle of\nES6 dust!");
-		text.anchor.set(0.5);
+		this.game.stage.backgroundColor = "#DDD";
+		this.player = new Player(this.game, 160, 480);
+		this.inputManager = new Input(this.game);
+	}
+
+	update(){
+		this.game.inputs = this.inputManager.update(); //manually update input (sprites will update themselves)
 	}
 
 }
