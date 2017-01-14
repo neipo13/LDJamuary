@@ -1,4 +1,4 @@
-import Sword from 'objects/Sword';
+simport Sword from 'objects/Sword';
 
 class Player extends Phaser.Sprite {
 
