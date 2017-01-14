@@ -1,8 +1,8 @@
-simport Sword from 'objects/Sword';
+import Sword from 'objects/Sword';
 
 class Player extends Phaser.Sprite {
 
-	constructor(game, x, y) {
+	constructor(game, x, y, swordGroup) {
 		super(game, x, y, 'player'); // sprite constructor
     this.anchor.setTo(.5,.5); // center sprite
     this.scale.setTo(2,2); //TODO:REMOVE THIS WHEN ADDING A 32px sprite
@@ -18,6 +18,7 @@ class Player extends Phaser.Sprite {
 
     //finished add it to the stage
     this.game.stage.addChild(this);
+		this.swordGroup = swordGroup;
 	}
 
   update(){
@@ -41,12 +42,10 @@ class Player extends Phaser.Sprite {
 		if(this.fireTimer < this.fireDelay/1000){
 				//increment time since last firing
 				this.fireTimer += 1/60;
-				console.log(this.fireTimer);
 		}
 		else{
 			//shoot dummy!
-			console.log('shooooooot');
-			const sword = new Sword(this.game, this.x, this.y, this.body.velocity.x);
+			this.swordGroup.add(new Sword(this.game, this.x, this.y, this.body.velocity.x));
 			//don't forget to reset the timer to 0;
 			this.fireTimer = 0;
 		}

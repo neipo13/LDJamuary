@@ -8,10 +8,15 @@ class Enemy extends Phaser.Sprite{
     //physics
     game.physics.arcade.enable(this);
     this.body.allowGravity = false;
+    this.anchor.setTo(.5,.5);
     //animation
 
     //finished add it to the stage
     this.game.stage.addChild(this);
+  }
+
+  onCollision(){
+    //placeholder fn
   }
 }
 
